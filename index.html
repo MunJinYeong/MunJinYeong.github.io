@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
 	<title>Personal Fashion Color</title>
 	<link rel="stylesheet" type="text/css" href="1.css">
-	<style>
-		li{list-style:none}
-		a{font-size:18px}
-		body,html{
-			margin: 0;
-		}
-		header {
-			background-color: #ecc30b; 
-			height:80px; 
-			position: fixed; 
-			width: 100%; 
-			top:0; 
-			left: 0;
-		}
-		.menu {
-			float: right;
-		}
-		.menu > li {
-			width: 200px; 
-			float: left; 
-			text-align: center; 
-			line-height: 50px;
-		}
-		.menubar { 
-			width: 1170px;
-			margin: 0 auto;
+	<script>
+		var index = 0;   //이미지에 접근하는 인덱스
+		window.onload = function(){
+			slideShow();
 		}
 		
-	</style>
-	<script>
-    		var index = 0;   //이미지에 접근하는 인덱스
-    		window.onload = function(){
-        		slideShow();
-    		}
-    
-   		 function slideShow() {
-   		 var i;
-   		 var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
-   		 for (i = 0; i < x.length; i++) {
-    		   x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
-    		}
-    		index++;
-    		if (index > x.length) {
-     		   index = 1;  //인덱스가 초과되면 1로 변경
-   		 }   
-    		x[index-1].style.display = "block";  //해당 인덱스는 block으로
-   		 setTimeout(slideShow, 2000);   //함수를 2초마다 호출
- 
+		function slideShow() {
+		var i;
+		var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
 		}
+		index++;
+		if (index > x.length) {
+			index = 1;  //인덱스가 초과되면 1로 변경
+		}   
+		x[index-1].style.display = "block";  //해당 인덱스는 block으로
+		setTimeout(slideShow, 2000);   //함수를 4초마다 호출
+	 
+	}
 	</script>
+	<style>
+		div{
+			display: block;
+		}
+
+		body,html{
+			margin: 0;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		/*메뉴바*/
+		.b{
+			margin:0 2%;
+			text-align: left;
+
+		}
+		.c{
+			
+			position: relative;
+		}
+		.e{
+			
+		}
+
+	</style>
 </head>
 <body>
 	<header>
-		<nav>
-			<div class="menubar">
-				<ul class="menu">
-		  			<li><a href="#">Home</a></li>
-		  			<li><a href="#">Trend Color </a></li>
-		  			<li><a href="#">Fashion color </a></li>
-				</ul>
+		
+			<div class="menubar" style="height: 85px;">
+				<nav class="b" style="width:1284px;">
+					<div class="c">
+						<div class="d"><a class="logo"></a></div>
+						<div class="e">
+							<ul class="celarlist" style="max-height: 824px;">
+								<li class="active">
+								<a href="" class="active" style="hegiht:85px; line-height: 85px;">HOME</a>
+								</li>
+								<li class>
+									<a href="" class="mn-has-sub" style="height: 85px; line-height:85px;">"Color"</a>
+								</li>
+							</ul>
+						</div>
+
+						</div>
+					</div>
+				</nav>
 	    	</div>
 		</nav>
 	</header>
-	<div>
-  		<img class="slide1" src="1.avlf" >
-  		<img class="slide1" src="2.jpg">
-  		<img class="slide1" src="3.jpg">
+	<div class="middle">
+
 	</div>
+	<div>
+		<img class="slide1" src="images/1.png" >
+		<img class="slide1" src="images/2.png">
+	  </div>
 </body>
 </html>
