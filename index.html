@@ -13,58 +13,59 @@
 		var i;
 		var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
 		for (i = 0; i < x.length; i++) {
-		   x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+		   x[i].style.display = "none";   //처음에 전부 display를 none으로
 		}
 		index++;
 		if (index > x.length) {
 			index = 1;  //인덱스가 초과되면 1로 변경
 		}   
 		x[index-1].style.display = "block";  //해당 인덱스는 block으로
-		setTimeout(slideShow, 2000);   //함수를 4초마다 호출
-	 
-	}
+		setTimeout(slideShow,2000);
+		}
 	</script>
 	<style>
 		div{
 			display: block;
 		}
-
-		body,html{
+		
+		body, html{
 			margin: 0;
 			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 		}
 		/*메뉴바*/
-		.b{
+		header{
+		}
+		.menubar{
+			height: 85px;
+		}
+		.menu{
 			margin:0 2%;
 			text-align: left;
-
+			width:1284px;
 		}
-		.c{
+		.menuA{
 			position: relative;
 		}
 		
-		.e a{
+		.menuB a{
 			text-decoration: none;
-			color: #777;
+			color:rgb(93, 61, 143);
 		}
-		.e a:hover{
+		.menuB a:hover{
 			color: black;
 			text-decoration: none;
+
 		}
-		.e ul{
+		.menuB ul{
 			float: right;
 			margin: auto;
 			font-size: 16px;
-			font-weight:600;
-			letter-spacing:0px;
-			text-transform: uppercase;
+			font-weight: 600;
 			text-align: center;
-			line-height: 1,3;
-			list-style: none;
 			padding: 0;
-			background: none;
 		}
-		.e li{ 
+		.menuB li{ 
+			list-style: none;
 			float: left;
 			position: relative;
 			margin-left: 270px;
@@ -73,7 +74,6 @@
 
 		/*이미지 슬라이드 부분*/
 		.slide1{
-
 		}
 
 		/*컬러 트렌드 부분*/
@@ -84,30 +84,31 @@
 		.article a{
 			text-decoration: none;
 			font-size: 18pt;
+			
 		}
 		.article table{
 			border-spacing: 25px;
 		}
 
+
 	</style>
 </head>
 <body>
 	<header>
-		
-			<div class="menubar" style="height: 85px;">
-				<nav class="b" style="width:1284px;">
-					<div class="c">
-						<div class="d"><a class="logo"></a></div>
-						<div class="e">
-							<ul style="max-height: 824px;">
-								<li class="active">
-								<a href="" class="active" style="hegiht:85px; line-height: 85px;">HOME</a>
+			<div class="menubar">
+				<nav class="menu">
+					<div class="munuA">
+						<div class><a class="logo"></a></div>
+						<div class="menuB">
+							<ul>
+								<li>
+									<a href="munjinyeong.github.io" style="height: 85px; line-height: 85px;">HOME</a>
 								</li>
-								<li class>
-									<a href="" class="mn-has-sub" style="height: 85px; line-height:85px;">Color</a>
+								<li>
+									<a href="#trend" style="height: 85px; line-height:85px;">COLOR</a>
 								</li>
-								<li class>
-									<a href="" class="mn-has-sub" style="height: 85px; line-height: 85px;">personal</a>
+								<li>
+									<a href="#recommend" style="height: 85px; line-height: 85px;">PERSONAL</a>
 								</li>
 							</ul>
 						</div>
@@ -126,7 +127,7 @@
 	<div class="article">
 		<br>
 		<br>
-		<h1>컬러 트렌드</h1>
+		<h1 id="trend">컬러 트렌드</h1>
 		<table>
 			<td>
 			<a href="">
@@ -154,5 +155,10 @@
 				</td>
 		</table>
     </div>
+	<div class="article">
+		<h1 id="recommend">패션 컬러 추천</h1>
+
+	</div>
+
 </body>
 </html>
