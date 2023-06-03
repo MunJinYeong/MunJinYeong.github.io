@@ -1,8 +1,4 @@
-		div{
-			display: block;
-		}
-		
-		body, html{
+				body, html{
 			margin: 0;
 			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 		}
@@ -36,27 +32,32 @@
 		}
 
 
-		/*컬러 트렌드 부분*/
+		/*본문부분*/
 		.article{
-			margin-left:20%;
-			margin-right: 20%;
+			margin-left:15%;
+			margin-right: 15%;
 		}
 		.article a{
 			text-decoration: none;
 			font-size: 18pt;
 
 		}
-		.article table{
-			border-spacing: 25px;
-		}
-        .article img{
-            width: 300px;
-            height: 300px;
+		
+
+		/*상단 div부분*/
+		.box{
+            height: 200px;
+            background-color:rgb(106, 75, 155);
+			position: relative;
         }
+		.boxtext{
+			position: absolute;
+			top: 27%;
+			left: 20%;	
+		}
 
 		/*리포트 부분*/
 		.report{
-			background-color: red;
 			width:1280px;
 			height: 600px;
 			margin: 0 auto;
