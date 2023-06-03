@@ -1,0 +1,79 @@
+		div{
+			display: block;
+		}
+		
+		body, html{
+			margin: 0;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
+		/*메뉴바*/
+		.menu{
+			margin:0 2%;
+			width:1284px;
+			height: 85px;
+		}
+		.menuB a{
+			text-decoration: none;
+			color:rgb(93, 61, 143);
+		}
+		.menuB a:hover{
+			color: black;
+			text-decoration: none;
+		}
+		.menuB ul{
+			float: right;
+			margin: auto;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+			padding: 0;
+		}
+		.menuB li{ 
+			list-style: none;
+			float: left;
+			margin-left: 270px;
+		}
+
+
+		/*컬러 트렌드 부분*/
+		.article{
+			margin-left:20%;
+			margin-right: 20%;
+		}
+		.article a{
+			text-decoration: none;
+			font-size: 18pt;
+
+		}
+		.article table{
+			border-spacing: 25px;
+		}
+        .article img{
+            width: 300px;
+            height: 300px;
+        }
+
+		/*리포트 부분*/
+		.report{
+			background-color: red;
+			width:1280px;
+			height: 600px;
+			margin: 0 auto;
+			border-radius: 4%;
+			position: relative;
+		}
+		.report div{
+			display: inline-block;
+		}
+		.report img{
+			width: 100%;
+			height: 600px;
+			border-radius: 4%;
+		}
+		.report p{
+			position: absolute;
+			left:50%;
+			top:33%;
+			font-size: 40px;
+		}
