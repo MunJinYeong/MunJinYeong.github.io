@@ -4,161 +4,67 @@
 	<title>Personal Fashion Color</title>
 	<link rel="stylesheet" type="text/css" href="1.css">
 	<script>
-		var index = 0;   //이미지에 접근하는 인덱스
-		window.onload = function(){
-			slideShow();
-		}
-		
-		function slideShow() {
-		var i;
-		var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
-		for (i = 0; i < x.length; i++) {
-		   x[i].style.display = "none";   //처음에 전부 display를 none으로
-		}
-		index++;
-		if (index > x.length) {
-			index = 1;  //인덱스가 초과되면 1로 변경
-		}   
-		x[index-1].style.display = "block";  //해당 인덱스는 block으로
-		setTimeout(slideShow,2000);
-		}
 	</script>
 	<style>
-		div{
-			display: block;
-		}
-		
-		body, html{
-			margin: 0;
-			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		}
-		/*메뉴바*/
-		header{
-		}
-		.menubar{
-			height: 85px;
-		}
-		.menu{
-			margin:0 2%;
-			text-align: left;
-			width:1284px;
-		}
-		.menuA{
+        .box{
+            height: 200px;
+            background-color:rgb(106, 75, 155);
 			position: relative;
+        }
+		.boxtext{
+			position: absolute;
+			top: 27%;
+			left: 10%;	
 		}
-		
-		.menuB a{
-			text-decoration: none;
-			color:rgb(93, 61, 143);
-		}
-		.menuB a:hover{
-			color: black;
-			text-decoration: none;
-
-		}
-		.menuB ul{
-			float: right;
-			margin: auto;
-			font-size: 16px;
-			font-weight: 600;
-			text-align: center;
-			padding: 0;
-		}
-		.menuB li{ 
-			list-style: none;
-			float: left;
-			position: relative;
-			margin-left: 270px;
-		}
-
-
-		/*이미지 슬라이드 부분*/
-		.slide1{
-		}
-
-		/*컬러 트렌드 부분*/
-		.article{
-			margin-left:20%;
-			margin-right: 20%;
-		}
-		.article a{
-			text-decoration: none;
-			font-size: 18pt;
-			
-		}
-		.article table{
-			border-spacing: 25px;
-		}
-
-
 	</style>
 </head>
 <body>
 	<header>
-			<div class="menubar">
-				<nav class="menu">
-					<div class="munuA">
-						<div class><a class="logo"></a></div>
-						<div class="menuB">
-							<ul>
-								<li>
-									<a href="munjinyeong.github.io" style="height: 85px; line-height: 85px;">HOME</a>
-								</li>
-								<li>
-									<a href="#trend" style="height: 85px; line-height:85px;">COLOR</a>
-								</li>
-								<li>
-									<a href="#recommend" style="height: 85px; line-height: 85px;">PERSONAL</a>
-								</li>
-							</ul>
-						</div>
-						</div>
-					</div>
-				</nav>
-	    	</div>
-		
+		<nav class="menu">
+			<div class="menuB">
+				<ul>
+					<li>
+						<a href="munjinyeong.github.io" style="height: 85px; line-height: 85px;">HOME</a>
+					</li>
+					<li>
+						<a href="#trend" style="height: 85px; line-height:85px;">COLOR</a>
+					</li>
+					<li>
+						<a href="#recommend" style="height: 85px; line-height: 85px;">PERSONAL</a>
+					</li>	
+				</ul>
+			</div>	
+		</nav>
 	</header>
 
-	<div>
-		<a href=""><img class="slide1" src="images/121.png" ></a>
-		<a href=""><img class="slide1" src="images/122.png"></a>
-		<a href=""><img class="slide1" src="images/123.png"></a>
+    <div class="box">
+        <div class="boxtext">
+            <div class="boxtext1">
+                <h1>COLOR TREND</h1>
+            </div>
+            <div>
+                <a href=""></a>
+            </div>
+        </div>
+
 	</div>
+
 	<div class="article">
 		<br>
 		<br>
 		<h1 id="trend">컬러 트렌드</h1>
-		<table>
-			<td>
-			<a href="">
-				<table border="0">
-					<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
-					<tr align="center"><td>2022 SS</td></tr>
-				</table>
-			</a>
-			</td>
-			<td>
-			<a href="">
-				<table border="0">
-					<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
-					<tr align="center"><td>2023 FW</td></tr>
-				</table>
-			</a>
-			</td>
-			<td>
-				<a href="">
-					<table border="0">
-						<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
-						<tr align="center"><td>2023 SS</td></tr>
-					</table>
-				</a>
-				</td>
-		</table>
+		<br>
+		<div class="report">
+			<div>
+				<img src="images/131.png">
+			</div>
+			<p>
+				Fashion color<br>
+				Trend Report<br>
+				Spring/Summer 2022 
+			</p>
+		</div>
     </div>
-	<div class="article">
-		<h1 id="recommend">패션 컬러 추천</h1>
-
-	</div>
 
 </body>
 </html>
