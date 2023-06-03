@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Fashion Color</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+	<script>
+        var i;
+        var red=['rgb(22,64,88)','rgb(69,69,69)','white','rgb(114,86,82)','black'];
+        var orange=['rgb(40,86,50)','rgb(210,227,245)','rgb(249,241,220)','rgb(27,38,83)','rgb(76,51,46)'];
+        var yellow=['rgb(83,30,24)','rgb(168,176,188)','rgb(37,22,76)','white','rgb(229,131,175)'];
+        var green=['rgb(214,197,189)','white','black','rgb(246,245,222)','rgb(69,69,69)'];
+        var blue=['rgb(112,112,112)','black','rgb(215,215,215)','white','rgb(138,115,97)'];
+        var navy=['rgb(210,191,154)','rgb(164,175,181)','rgb(186,120,121)','white','rgb(69,69,69)'];
+        var purple=['rgb(24,48,86)','rgb(174,152,131)','rgb(112,112,112)','black','rgb(105,77,118)'];
+        var beige=['rgb(73,89,76)','rgb(203,158,155)','rgb(25,40,79)','white','black'];
+        var white=['rgb(73,89,76)','rgb(184,152,189)','rgb(103,76,59)','rgb(193,224,244)','rgb(193,125,126)'];
+        var balck=['rgb(219,210,203)','rgb(40,40,40)','rgb(white)','rgb(68,71,86)','rgb(5,40,80)'];
+        var gray=['rgb(153,174,179)','white','black','rgb(75,75,75)','rgb(198,191,185)'];
+        
+        function color(obj){
+            var id = obj.target.id;
+            var target0=document.getElementById("target0");
+            var target1=document.getElementById("target1");
+            var target2=document.getElementById("target2");
+            var target3=document.getElementById("target3");
+            var target4=document.getElementById("target4");
+            var target=[target0,target1,target2,target3,target4];
+            if(id=="red"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=red[i];
+                }
+            }
+            else if(id=="orange"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=orange[i];
+                }
+            }
+            else if(id=="yellow"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=yellow[i];
+                }
+            }
+            else if(id=="green"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=green[i];
+                }
+            }
+            else if(id=="blue"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=blue[i];
+                }
+            }
+            else if(id=="navy"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=navy[i];
+                }
+            }
+            else if(id=="purple"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=purple[i];
+                }
+            }
+            else if(id=="white"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=white[i];
+                }
+            }
+            else if(id=="black"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=black[i];
+                }
+            }
+            else if(id=="gray"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=gray[i];
+                }
+            }
+            else if(id=="beige"){
+                for(i=0; i<5; i++){
+                    target[i].style.background=beige[i];
+                }
+            }
+        }
+        
+	</script>
+	<style>
+        .article div{
+            width: 100px;
+            height: 100px;
+        }
+        
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<div class="menuB">
+				<ul>
+					<li>
+						<a href="" style="height: 85px; line-height: 85px;">HOME</a>
+					</li>
+					<li>
+						<a href="trend.html" style="height: 85px; line-height:85px;">COLOR</a>
+					</li>
+					<li>
+						<a href="personal.html" style="height: 85px; line-height: 85px;">PERSONAL</a>
+					</li>	
+				</ul>
+			</div>	
+		</nav>
+	</header>
+
+    <div class="box">
+        <div class="boxtext">
+            <div>
+                <h1>2023 SS</h1>
+            </div>
+            <div>
+                <a href=""></a>
+            </div>
+        </div>
+	</div>
+
+	<div class="article">
+		<br><br><br><br><br><br>
+        <table>
+            <tr>
+                <td><div id="red" style="background-color:red" onclick="color(event)"></div></td>
+                <td><div id="orange" style="background-color:orange" onclick="color(event)"></div></td>
+                <td><div id="yellow" style="background-color:yellow" onclick="color(event)"></div></td>
+                <td><div id="green" style="background-color:green" onclick="color(event)"></div></td>
+                <td><div id="blue" style="background-color:blue" onclick="color(event)"></div></td>
+                <td><div id="navy" style="background-color:navy" onclick="color(event)"></div></td>
+                <td><div id="purple" style="background-color:purple" onclick="color(event)"></div></td>
+                <td><div id="white" style="background-color:white" onclick="color(event)"></div></td>
+                <td><div id="black" style="background-color:black" onclick="color(event)"></div></td>
+                <td><div id="gray" style="background-color:gray" onclick="color(event)"></div></td>
+                <td><div id="beige" style="background-color:beige" onclick="color(event)"></div></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+            <td><div id="target0" style="width:100px; height:100px;"></div></td>
+            <td><div id="target1" style="width:100px; height:100px;"></div></td>
+            <td><div id="target2" style="width:100px; height:100px;"></div></td>
+            <td><div id="target3" style="width:100px; height:100px;"></div></td>
+            <td><div id="target4" style="width:100px; height:100px;"></div></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
