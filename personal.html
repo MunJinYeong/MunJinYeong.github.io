@@ -87,8 +87,28 @@
         .article div{
             width: 100px;
             height: 100px;
+            border-radius: 10%;
+            border: 1px solid;
         }
-        
+        table{
+            border-spacing: 10px;
+            margin-left:auto;
+            margin-right: auto;
+        }    
+        .article{
+            text-align: center;
+        }
+        h1{
+            font-size:35px;
+        }
+        h2{
+            font-size:30px;
+            color:rgb(63, 63, 65);
+        }
+        p{
+            font-size: 20px;
+            color:rgb(106, 106, 110);
+        }
 	</style>
 </head>
 <body>
@@ -113,16 +133,20 @@
     <div class="box">
         <div class="boxtext">
             <div>
-                <h1>2023 SS</h1>
-            </div>
-            <div>
-                <a href=""></a>
+                <h1>Color Recommend</h1>
             </div>
         </div>
 	</div>
 
 	<div class="article">
-		<br><br><br><br><br><br>
+		<br><br><br><Br>
+            <h1 class="head">옷 색상 조합 추천 서비스</h1>
+            <p>
+                  트렌드 컬러를 적용하여 옷에 대해 어울리는 색상을 추천해줍니다.<br>
+                  원하는 색상을 선택 시 추천 색상란에 5개의 추천 색상이 표시됩니다.
+            </p>
+            <br><br><br><br><br>
+            <h2>원하는 색상</h2>
         <table>
             <tr>
                 <td><div id="red" style="background-color:red" onclick="color(event)"></div></td>
@@ -131,7 +155,7 @@
                 <td><div id="green" style="background-color:green" onclick="color(event)"></div></td>
                 <td><div id="blue" style="background-color:blue" onclick="color(event)"></div></td>
                 <td><div id="navy" style="background-color:navy" onclick="color(event)"></div></td>
-                <td><div id="purple" style="background-color:purple" onclick="color(event)"></div></td>
+                <td><div id="purple" style="background-color:rgb(125, 18, 226)" onclick="color(event)"></div></td>
                 <td><div id="white" style="background-color:white" onclick="color(event)"></div></td>
                 <td><div id="black" style="background-color:black" onclick="color(event)"></div></td>
                 <td><div id="gray" style="background-color:gray" onclick="color(event)"></div></td>
@@ -139,6 +163,8 @@
             </tr>
         </table>
         <hr>
+        <br><br><br>
+        <h2>추천 색상</h2>
         <table>
             <tr>
             <td><div id="target0" style="width:100px; height:100px;"></div></td>
@@ -149,6 +175,6 @@
             </tr>
         </table>
     </div>
-    
+    <br><br><br><br>
 </body>
 </html>
