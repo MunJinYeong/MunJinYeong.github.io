@@ -27,17 +27,41 @@
 		/*이미지 슬라이드 부분*/
 		.slide1{
 		}
+
 		/*본문 부분*/
 		.article table{
 			border-spacing: 40px;
 		}
-
         .article img{
             width: 300px;
             height: 300px;
 			border-radius: 3%;
         }
+		#recommend,#trend{
+			font-size: 35px;
+			font-weight: 700;
+			text-align: center;
+			color:rgb(79, 57, 114);
+		}
 
+		/*컬러 추천 부분*/
+		.rec{
+			width:1200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.rec a{
+			font-size: 20px;
+            color:rgb(106, 106, 110);
+		}
+		.rec img{
+			width: 700px;
+			height:500px;
+		}
+		.rec h1{
+			font-size:30px;
+            color:rgb(98, 98, 100);
+		}
 	</style>
 </head>
 <body>
@@ -52,7 +76,7 @@
 						<a href="trend.html" style="height: 85px; line-height:85px;">COLOR</a>
 					</li>
 					<li>
-						<a href="personal.html" style="height: 85px; line-height: 85px;">PERSONAL</a>
+						<a href="personal.html" style="height: 85px; line-height: 85px;">RECOMMEND</a>
 					</li>	
 				</ul>
 			</div>	
@@ -61,42 +85,53 @@
 
 	<div>
 		<a href="#trend"><img class="slide1" src="images/121.png" ></a>
-		<a href=""><img class="slide1" src="images/122.png"></a>
+		<a href="#recommend"><img class="slide1" src="images/122.png"></a>
 		<a href=""><img class="slide1" src="images/123.png"></a>
 	</div>
 
 	<div class="article">
-		<br>
-		<br>
-		<h1 id="trend">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;컬러 트렌드</h1>
+		<br><br><br>
+		<h1 id="trend">컬러 트렌드</h1>
 		<table>
 			<td>
-			<a href="">
-				<table border="0">
-					<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
-					<tr align="center"><td>2022 SS</td></tr>
-				</table>
-			</a>
-			</td>
-			<td>
-			<a href="">
-				<table border="0">
-					<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
-					<tr align="center"><td>2023 FW</td></tr>
-				</table>
-			</a>
-			</td>
-			<td>
-				<a href="">
+				<a href="2023 SS.html">
 					<table border="0">
-						<tr><td><img src="images/131.png" width="300px" height="300px"></td></tr>
+						<tr><td><img src="images/4.png" width="300px" height="300px"></td></tr>
 						<tr align="center"><td>2023 SS</td></tr>
 					</table>
 				</a>
-				</td>
+			</td>
+			<td>
+				<a href="2023 FW.html">
+					<table border="0">
+						<tr><td><img src="images/3.png" width="300px" height="300px"></td></tr>
+						<tr align="center"><td>2023 FW</td></tr>
+					</table>
+				</a>
+			</td>
+			<td>
+				<a href="2022 SS.html">
+					<table border="0">
+						<tr><td><img src="images/2.png" width="300px" height="300px"></td></tr>
+						<tr align="center"><td>2022 SS</td></tr>
+					</table>
+				</a>
+			</td>
 		</table>
-    </div>
 
+		<br><br>
+		<hr>
+		<br><br><br>
 
+		<h1 id="recommend">컬러 추천</h1>
+		<table class="rec">
+			<tr>
+				<td><img src="images/1.png"></td>
+				<td><a href="personal.html"><h1>컬러 추천받기</h1>
+				<br>원하는 색상을 선택하고 트렌드에 맞는<br>어울리는 패션 컬러를 추천받으세요.</a></td>
+			</tr>
+		</table>
+		<br><br><br><br><br>
+	</div>
 </body>
 </html>
