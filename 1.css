@@ -1,14 +1,15 @@
 		body, html{
 			margin: 0;
 			font-family:Helvetica;
+			width:100%
 		}
 		a{
 			text-decoration: none;
 		}
 		/*메뉴바*/
 		.menu{
-			margin:0 2%;
-			width:1284px;
+			margin:0;
+			width:100%;
 			height: 85px;
 		}
 		.menuB a{
@@ -18,12 +19,11 @@
 			color: black;
 		}
 		.menuB ul{
-			float: right;
 			margin: auto;
+			padding: 0;
+			width:61%;
 			font-size: 16px;
 			font-weight: 600;
-			text-align: center;
-			padding: 0;
 		}
 		.menuB li{ 
 			list-style: none;
@@ -44,6 +44,7 @@
 
 		/*상단 div부분*/
 		.box{
+			width:100%;
             height: 200px;
             background: linear-gradient(to right, rgb(196,149,253), rgb(159,85,255));
 			position: relative;
