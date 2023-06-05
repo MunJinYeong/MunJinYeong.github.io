@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Personal Fashion Color</title>
+	<title>Fashion Color</title>
 	<link rel="stylesheet" type="text/css" href="1.css">
 	<script>
-		var index = 0;   //이미지에 접근하는 인덱스
-		window.onload = function(){
-			slideShow();
+		var index = 0; 
+		window.onload = function(){ //윈도우가 온로드되면 imagechange함수 실행
+			imagechange();
 		}
 		
-		function slideShow() {
-		var i;
-		var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
-		for (i = 0; i < x.length; i++) {
-		   x[i].style.display = "none";   //처음에 전부 display를 none으로
+		function imagechange() {
+			var i;
+			var x = document.getElementsByClassName("img");  //img에 대한 dom 참조
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";   //처음엔 전부 안 보이게
+			}
+
+			index++;
+
+			if (index > x.length) {
+				index = 1;  //인덱스가 사진 개수보다 초과되면 1로
+			}   
+
+			x[index-1].style.display = "block";  //하나씩 블럭 처리하여 가시화
+			setTimeout(imagechange,2000); //2초 후 다시 함수 실행
 		}
-		index++;
-		if (index > x.length) {
-			index = 1;  //인덱스가 초과되면 1로 변경
-		}   
-		x[index-1].style.display = "block";  //해당 인덱스는 block으로
-		setTimeout(slideShow,2000);
-		}
+
 	</script>
 	<style>
 		/*이미지 슬라이드 부분*/
-		.slide1{
+		.img{
+			width:100%;
 		}
 
 		/*본문 부분*/
@@ -76,7 +81,7 @@
 						<a href="trend.html" style="height: 85px; line-height:85px;">COLOR</a>
 					</li>
 					<li>
-						<a href="personal.html" style="height: 85px; line-height: 85px;">RECOMMEND</a>
+						<a href="recommend.html" style="height: 85px; line-height: 85px;">RECOMMEND</a>
 					</li>	
 				</ul>
 			</div>	
@@ -84,9 +89,8 @@
 	</header>
 
 	<div>
-		<a href="#trend"><img class="slide1" src="images/121.png" ></a>
-		<a href="#recommend"><img class="slide1" src="images/122.png"></a>
-		<a href=""><img class="slide1" src="images/123.png"></a>
+		<a href="#trend"><img class="img" src="images/main1.png" ></a>
+		<a href="#recommend"><img class="img" src="images/main2.png"></a>
 	</div>
 
 	<div class="article">
@@ -127,11 +131,16 @@
 		<table class="rec">
 			<tr>
 				<td><img src="images/1.png"></td>
-				<td><a href="personal.html"><h1>컬러 추천받기</h1>
+				<td><a href="recommend.html"><h1>컬러 추천받기</h1>
 				<br>원하는 색상을 선택하고 트렌드에 맞는<br>어울리는 패션 컬러를 추천받으세요.</a></td>
 			</tr>
 		</table>
-		<br><br><br><br><br>
+		<br><br><br><br><br><br><br>
+		<hr>
+		<br>
+		출처<br>
+		컬러 트렌드 영역 사진 출처[pantone.kr]<br>
+		컬러 추천 영역 사진 출처[unsplash.com]
 	</div>
 </body>
 </html>
